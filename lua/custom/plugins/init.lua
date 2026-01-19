@@ -3,6 +3,13 @@
 --
 -- See the kickstart.nvim README for more information
 return {
+  {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function ()
+      vim.g.rustfmt_autosave = 1
+    end
+  },
   'tweekmonster/django-plus.vim',
   'nvimtools/none-ls.nvim',
   dependencies = {
